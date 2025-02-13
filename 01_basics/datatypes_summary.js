@@ -10,7 +10,7 @@ let HasCame;
 
 const id = Symbol("123")
 const anotherId = Symbol("123")
-console.log(id == anotherId)
+// console.log(id == anotherId)
 
 const BigInt = 2134341212343252345435234123412341n
 
@@ -37,3 +37,35 @@ let object1 = {
 const myFunc = function(){
     console.log("Hello World")
 }
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++Memory+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Stack(Primitive)+(Copy) , Heap(Non-Primitive)+(Reference)
+
+
+// Stack
+
+let FirstName = "Asjad"
+let secondName =  FirstName
+secondName = "Gull"
+// console.log(secondName)
+
+// console.log(FirstName)
+
+
+let userOne = {
+    email: "asjadgull666@hmail.com"
+}
+
+let userTwo = userOne
+userTwo.email = "asjadgull123@gmail.com"
+console.log(userOne)
+console.log(userTwo)
+
+
+
+
