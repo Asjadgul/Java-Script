@@ -11,6 +11,6 @@
 
 const myarr = ["a","b " , "c" ]
 
-for (const key in myarr) {
-    console.log(key)
-}
+// for (const key in myarr) {
+//     console.log(key)
+// }
