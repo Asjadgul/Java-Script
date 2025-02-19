@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code with Asjad</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const nameChange = function () {
+        document.querySelector('h1').innerHTML = "Best javascript code"
+    }
+    const changeH1 = setTimeout(nameChange, 3000)
+
+    document.querySelector("#stop").addEventListener('click', function (){
+        clearTimeout(changeH1)
+    })
+</script>
+</html>
